@@ -3,6 +3,7 @@ import React from "react";
 import Message from "./Message";
 import Button from "./Button";
 import Library from "./Library";
+import MyForm from "./component/MyForm";
 
 const bookList = [
   { id: 1, name: "Wings of fire", date: "12/09/1993", auther: "APJ Abdul"},
@@ -22,6 +23,8 @@ class App extends React.Component {
         <Button btnName="Show"/>
 
       <Library books={bookList}/>
+      <MyForm/>
+
       </div>
     );
   }
